@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.header{
+    background:linear-gradient(#ada8a802, rgba(0, 0, 0, 0.885)), url("https://assets.cntraveller.in/photos/63d8e5103d7229d4cf308f01/16:9/w_1024%2Cc_limit/Prequel-lead.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+     
+    width: 100%;
+  
+    min-height: 100vh;
+    padding: 20px;
+}
+.top h1{
+    
+    color: #c8a97e;
+    text-align: center;
+    padding-top: 18%;
+    font-size: 2.5rem;
+    
+}
+.top span{
+    color: white;
+    font-size: 4rem;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.child{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+
+}
+.child img{
+width: 30%;
+
+border-radius: 50%;
+object-fit: cover;
+}
+
+
+.second{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+justify-content: center;
+padding: 80px 200px 80px 200px;
+gap: 20px;
+align-items: center;
+
+}
+.img1 img{
+width: 100%;
+min-height: 70vh;
+object-fit: cover;
+}
+ .img2 img{
+width: 100%;
+margin-top: 40px;
+min-height: 70vh;
+object-fit: cover;
+}
+.content h1{
+color: #c8a97e;
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+.content span{
+color: black;
+font-size: 4rem;
+
+}
+.content h3{
+margin-top: 20px;
+}
+.content p{
+color: #c8a97e;
+font-size: 3rem;
+margin-top: 20px;
+}
+
+.menu{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 10%;
+
+}
+.menu-card{
+display: flex;
+gap: 10px;
+border: 1px solid rgb(128, 123, 123);
+
+
+}
+.menu-card .left{
+flex: 1;
+
+}
+.menu-card .right{
+flex: 1;
+}
+.left img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+
+}
+
+.right h3{
+font-size: 1.5rem;
+}
+.right p{
+font-size: 1rem;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.right button{
+background-color: #c8a97e;
+padding: 10px;
+width: 130px;
+color: white;
+border: none;
+}
+.right button:hover{
+background-color: #e9af5f;
+}
+@media(max-width:1200px){
+.second{
+    padding: 60px;
+}
+.img1 img{
+   min-height: 60vh;
+}
+.img2 img{
+min-height: 60vh;
+}
+.content p{
+    font-size: 2rem;
+}
+}
+@media(max-width:992px){
+.second{
+    padding: 50px;
+}
+.img1 img{
+    min-height: 50vh;
+}
+.img2 img{
+min-height: 50vh;
+}
+.content h1{
+    font-size: 1.5rem;
+    
+}
+.content span{
+font-size: 2.5rem;
+
+}
+.content h3{
+margin-top: 15px;
+}
+.content p{
+font-size: 1.5rem;
+margin-top: 15px;
+}
+}
+.top h1{
+    font-size: 2rem;
+    padding: 15%;
+}
+.top span{
+    font-size: 3rem;
+}
+.menu{
+    padding: 6%;
+}
+
+@media(max-width:786px){
+
+.top h1{
+    font-size: 2rem;
+}
+.top span{
+    font-size: 3rem;
+}
+.menu{
+    padding: 5%;
+}
+.content span{
+    font-size: 1.8rem;
+}
+.bottom{
+    grid-template-columns: repeat(2,1fr);  
+}
+}
+@media(max-width:600px){
+.top h1{
+   padding: 10%;
+    font-size: 1.5rem;
+}
+.top span{
+    font-size: 1.8rem;
+}
+.header{
+    padding-top: 100px;
+    object-fit: cover;
+}
+.menu{
+grid-template-columns: repeat(1, 1fr);
+}
+.bottom{
+    grid-template-columns: repeat(2,1fr);  
+}
+.second{
+    padding: 30px;
+    grid-template-columns: repeat(2,1fr);
+}
+.img1 img{
+    min-height: 40vh;
+}
+.img2 img{
+min-height: 40vh;
+}
+.content{
+width: 100%;
+grid-row-start:2;
+grid-row-end:4;
+grid-column-start:1;
+grid-column-end:3;
+text-align: center;
+background-color: whitesmoke;
+
+}
+}
+
